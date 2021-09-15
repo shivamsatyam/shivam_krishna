@@ -32,6 +32,7 @@ setTimeout(()=>{
 
 
 let input = document.getElementById('input')
+document.body.appendChild(input)
 let value = ""
 let see_btn = document.getElementById("see")
 input.addEventListener('input',(e)=>{
@@ -43,14 +44,19 @@ see_btn.addEventListener("click",(e)=>{
 	if(value==""){
 		return
 	}
-	
-	input.select()
-	input.setSelectionRange(0,99999)
 
 	let index = location.href.indexOf("?")
 	let loc = location.href.slice(0,index)
 
-	navigator.clipboard.writeText(`${loc}?name=${value}`)
+	
+	input.focus()
+	input.value = `${loc}?name=${value}`
+	input.select()
+	input.setSelectionRange(0,99999)
+
+	document.execCommand("copy")
+	input.style.display = none
+	
 	alert("link copied to clip board")
 })
 
