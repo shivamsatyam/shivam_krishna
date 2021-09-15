@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::placeholder{
+	color:white;	
+}
+
+.container{
+	width: 100vw;
+
+	background-color: black;
+}
+
+.input{
+position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input input{
+    width: 100%;
+    max-width: 1615px;
+    background-color: red;
+    color: white;
+    outline: none;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 11px;
+    text-align: center;
+}
+
+
+.input button{
+width: 100%;
+    max-width: 103px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+.box{
+	    width: 100%;
+    max-width: 800px;
+    height:fit-content;
+    margin: auto;
+    background-image: url(image/download.jpg);
+    object-fit: contain;
+    background-size: contain;
+}
+.first{
+text-align: center;
+}
+
+.first img{
+ animation-name: first;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+
+}
+
+@keyframes first{
+	0%{
+		transform: scale(0.8);
+	}
+
+	40%{
+		transform: scale(1);
+	}
+
+	60%{
+transform: scale(1.1);
+	}
+
+	80%{
+transform: scale(1.12);
+	}
+
+	100%{
+transform: scale(1);
+	}
+}
+
+
+.third{
+	text-align: center;
+	margin:12px 0px;
+}
+
+.third img{
+	 animation-name: third;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-delay: 1s;
+     width: 100%;
+    max-width: 300px;
+}
+
+@keyframes third{
+	0%{
+		transform: scale(0.8);
+	}
+
+	15%{
+		transform: scale(1);
+	}
+
+	20%{
+		transform: rotate(-3deg);
+	}
+
+30%{
+		transform: rotate(-5deg);
+	}
+
+	40%{
+		transform: rotate(-3deg);
+	}
+
+50%{
+		transform: rotate(0deg);
+}
+
+60%{
+	transform: rotate(3deg);
+}
+
+70%{
+		transform: rotate(5deg);
+}
+
+80%{
+		transform: rotate(3deg);
+}	
+
+90%{
+		transform: rotate(0deg);
+}
+
+}
+
+.button_effect{
+
+}
+
+.name{
+    border: none;
+    margin: 22px auto;
+    color: white;
+    font-family: system-ui;
+    font-size: 1.6rem;
+    padding: 9px;
+    width: fit-content;
+  
+    border-radius: 17px;
+   
+    background-color: #da0d0d;
+    box-shadow: 1px -3px 31px 13px red;
+    animation-name: effect;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes effect{
+	0%{
+		 background-color: #da0d0d;
+		   box-shadow: 1px -3px 31px 3px red;
+	}
+
+	25%{
+ background-color: #f30a0a;
+   box-shadow: 1px -3px 31px 8px red;
+	}
+
+	50%{
+ background-color: red;
+  box-shadow: 1px -3px 31px 13px red;
+	}
+
+	75%{
+ background-color: #f30a0a;
+   box-shadow: 1px -3px 31px 8px red;
+	}
+
+	100%{
+		 background-color: #da0d0d;
+		   box-shadow: 1px -3px 31px 3px red;
+	}
+}
+
+
+.hindi{
+
+	color: white;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: system-ui;
+}
+
+
+#hindi_1{
+    color: orange;
+}
+
+
+
+#hindi_2{
+	color: white;
+}
+
+
+
+#hindi_3{
+
+}
+
+
+
+#hindi_4{
+	color: yellow;
+}
+
+
+
+#hindi_5{
+	color:red;
+}
+
+
+
+.image_slider{
+text-align: center;
+    margin: 45px 0px;
+}
+
+
+
+.image_slider img{
+		    width: 100%;
+    max-width: 352px;
+}
+
+
+
+#surname{
+color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: sans-serif;
+    animation-name: surname;
+    animation-iteration-count: infinite;
+    animation-duration: 2.3s;
+}
+
+
+@keyframes surname{
+	0%{
+		transform: rotateY(26deg);
+	}
+
+	25%{
+		transform: rotateY(18deg);
+	}
+
+	50%{
+transform: rotateY(0deg);
+	}
+
+	75%{
+transform: rotateY(18deg);
+	}
+
+	100%{
+transform: rotateY(26deg);
+	}
+}
+
+
+.hover{
+margin: 27px auto;
+    width: fit-content;
+}
+
+.hover img{
+    width: 100%;
+    max-width: 380px;
+}
