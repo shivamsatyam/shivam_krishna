@@ -32,14 +32,16 @@ setTimeout(()=>{
 
 
 let input = document.getElementById('input')
-document.body.appendChild(input)
+
 let value = ""
 let see_btn = document.getElementById("see")
+
 input.addEventListener('input',(e)=>{
 	 value = e.target.value
 })
 
 let textarea = document.createElement("textarea")
+document.body.appendChild(textarea)
 
 see_btn.addEventListener("click",(e)=>{
 	if(value==""){
