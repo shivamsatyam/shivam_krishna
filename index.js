@@ -39,6 +39,7 @@ input.addEventListener('input',(e)=>{
 	 value = e.target.value
 })
 
+let textarea = document.createElement("textarea")
 
 see_btn.addEventListener("click",(e)=>{
 	if(value==""){
@@ -49,13 +50,13 @@ see_btn.addEventListener("click",(e)=>{
 	let loc = location.href.slice(0,index)
 
 	
-	input.focus()
-	input.value = `${loc}?name=${value}`
-	input.select()
-	input.setSelectionRange(0,99999)
+	textarea.focus()
+	textarea.value = `${loc}?name=${value}`
+	textarea.select()
+	textarea.setSelectionRange(0,99999)
 
 	document.execCommand("copy")
-	input.style.display = none
+	textarea.style.display = none
 	
 	alert("link copied to clip board")
 })
