@@ -16,7 +16,7 @@ let image_count = 1
 
 image_slider_image = document.getElementById("image_slider_image")
 
-setTimeout(()=>{
+setInterval(()=>{
 		if(image_count==3){
 		image_count = 1
 	}
@@ -90,6 +90,7 @@ let audio_btn = document.getElementById("audio_btn")
 audio_btn.addEventListener("click",()=>{
 	console.log('clicked')
 	audio.play()
+        audio.loop = true
 	audio_btn.style.display = "none"
 })
 
@@ -99,6 +100,7 @@ setTimeout(()=>{
 if (promise !== undefined) {
   promise.then(() => {
    	audio.play()
+        audio.loop = true
   }).catch(error => {
    		audio_btn.style.display = "block"
   });
